@@ -1,0 +1,7 @@
+
+<label> Select Subscription </label>
+<select id="classoption" class="form-control" (change)="onSUbscriptionChangeOnEdit($event.target.value)">
+  <option *ngFor="let sub of subscriptionArrayArray" [selected]="sub.isSelect">{{sub.text}}</option>
+</select>
+
+<button type="button" class="btn btn-default" (click)="redirecToNextPage()">Submit</button>

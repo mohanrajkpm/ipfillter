@@ -1,0 +1,12 @@
+<form>
+  Add IP Here:<br>
+  <input type="text" name="ipadd" [(ngModel)] ="userIp">
+  <button type="button" class="btn btn-default btn-md border-none" (click)="removeIpFromArray()" >
+    <span class="glyphicon glyphicon-minus"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-md border-none"  (click)="addIpIntoArray()">
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
+  <br>
+  <button type="button" class="btn btn-default save-btn" (click)="storeIPIntoLocalStorage()">Save</button>
+</form>
